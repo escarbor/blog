@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+
+{% block style %} {% endblock %}
+<head>
+	<title>    {% block title %} {% endblock %}</title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="nav navbar-nav navbar-right navbar-border nav-font">
+				<li>{% if request.get_full_path == "/about/" %} {% else %}
+					<a href="{% url 'about' %}">About</a> {% endif %}</li>
+				<li>{% if request.get_full_path == "/blog/"  or request.get_full_path == "/" %} {% else %}
+					<a href="{% url 'blog' %}">Blog</a> {% endif %}</li>
+				{#          <li>{% if request.get_full_path == "/portfolio/" %} {% else %} <a href="{% url 'portfolio' %}">Portfolio</a> {% endif %}</li>#}
+				<li>{% if request.get_full_path == "/contact/" %} {% else %}
+					<a id='#contact' href="{% url 'contact' %}">Contact</a> {% endif %}</li>
+				<li><a href="https://github.com/EliasS87"><img src="{% static 'images/GitHub-Mark-32px.png' %}"></a>
+				</li>
+				<li><a href="https://twitter.com/ejscarborough87?lang=en"><img
+						src="{% static 'images/iconmonstr-twitter-4-32.png' %}"></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<br>
+{% block content %}
+{% endblock %}
+{% block javascript %}
+{% endblock %}
+
+</body>
+</html>

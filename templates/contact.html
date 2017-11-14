@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+	<link rel="stylesheet" href="{% static 'css/contact.css' %}" xmlns="http://www.w3.org/1999/html">
+	<script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+{% endblock %}
+
+
+{% block title %}
+	Contact
+{% endblock %}
+
+
+{% block content %}
+	<div class="container">
+	<div class="row">
+			<div class="col-md-6 col-md-offset-3
+			">
+				<div id="alert" class="alert alert-info col-xs-12 text-center">
+					<span>Email sent! I'll get back to you soon.</span>
+				</div>
+			<div id="alert-danger" class="alert alert-danger col-xs-12 text-center">
+					<span>Form is incomplete.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container form-container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3" id="form-outer">
+				<br>
+				<form class="form-horizontal" method="post" id="contact-form">
+					{% csrf_token %}
+					</fieldset>
+					<h2 class="text-center contact-title-font">Contact Elias</h2>
+
+					<!-- Name input-->
+					<div class="form-group">
+						<label class="col-md-3 control-label contact-label" for="name">Name</label>
+						<div class="col-md-9">
+							<input id="email_name" name="name" type="text" placeholder="Your name" class="form-control"
+							       required>
+						</div>
+					</div>
+
+					<!-- Email input-->
+					<div class="form-group">
+						<label class="col-md-3 control-label contact-label" for="email">E-mail</label>
+						<div class="col-md-9">
+							<input id="email_address" name="email" type="text" placeholder="Your email"
+							       class="form-control" required>
+						</div>
+					</div>
+
+					<!-- Subject input-->
+					<div class="form-group">
+						<label class="col-md-3 control-label contact-label" for="email">Subject</label>
+						<div class="col-md-9">
+							<input id="email_subject" name="email" type="text" placeholder="Subject"
+							       class="form-control" required>
+						</div>
+					</div>
+
+					<!-- Message body -->
+					<div class="form-group">
+						<label class="col-md-3 control-label contact-label" for="message">Message</label>
+						<div class="col-md-9">
+							<textarea class="form-control" id="email_body" name="message" placeholder="Your Message"
+							          rows="5" required></textarea>
+						</div>
+					</div>
+
+					<!-- Form actions -->
+					<div class="form-group">
+						<div class="col-md-12 text-right">
+							<button id="contact_submit" type="submit" class="btn btn-default btn-lg contact-label">
+								Submit
+							</button>
+						</div>
+					</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+{% block javascript %}
+	<script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+{% endblock %}

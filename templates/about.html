@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+	<link rel="stylesheet" href="{% static 'css/about.css' %}">
+	<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+
+
+{% block title %}
+	Welcome
+{% endblock %}
+
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<div class="image-container col-sm-8 col-sm-offset-2">
+					<img class="index-image img-responsive" width="300" height="300" src="{% static 'images/me.jpg' %}">
+				</div>
+				<div>
+					<div class="row">
+						<div class="text">
+							<div class="col-xs-12">
+								<p>Hello. My name is Elias (right).</p>
+								<p>I am a web developer living in the Midwestern United States.</p>
+								<p>I sometimes blog about things that interest me.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

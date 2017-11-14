@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+	<link rel="stylesheet" href="{% static 'css/blog_post.css' %}">
+{% endblock %}
+
+
+{% block title %}
+	{{ post.title }}
+{% endblock %}
+
+
+{% block content %}
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<div class="blog-post-container">
+					<div class="text-center blog-post-title">{{ post.title }}</div>
+					<div>
+						<p class="text-center blog-post-pub-date">{{ post.pub_date }}</p>
+						<div class="blog-post-body">
+							<p>{{ post.formatted_markdown|safe }}</p>
+							<div>
+								{% for category in post.categories.all %}
+									<span class="label label-default blog-categories"><a
+											href="{% url 'blog_filtered' category=category %}">{{ category }}</a></span>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn" data-toggle="collapse" data-target="#comments-collapse">View Comments <span
+						class="glyphicon glyphicon-chevron-up"></span><span
+						class="glyphicon glyphicon-chevron-down"></span></button>
+
+				<div id="comments-collapse" class="collapse">
+
+
+					<div class="comment-container">
+						{% for comment in comments %}
+							<div class="comment">
+								<div class="comment-title"><span>{{ comment.name }}</span></div>
+								<div class="comment-date"><span>{{ comment.pub_date }}</span></div>
+								<div class="comment-body"><span>{{ comment.comment }}</span></div>
+							</div>
+
+						{% endfor %}
+					</div>
+
+					<hr>
+
+					<form class="form-body" method="post" id="comment-form">
+						{% csrf_token %}
+						<h4>Add a comment...</h4>
+
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" class="form-control" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="text" id="email" name="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="comment">Comment</label>
+							<textarea id="comment" name="comment" class="form-control" placeholder="Leave a comment.."
+							          style="height:200px"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="col-md-12 text-left">
+								<button id="comment_submit" type="submit" class="btn btn-default btn-lg contact-label">
+									Submit
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+{% block javascript %}
+	<script type="text/javascript" src="{% static 'js/comment.js' %}"></script>
+{% endblock %}
