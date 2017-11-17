@@ -94,8 +94,8 @@
       <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="415">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="2" selection-end-line="148" selection-end-column="50" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -742,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="415">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="2" selection-end-line="148" selection-end-column="50" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
