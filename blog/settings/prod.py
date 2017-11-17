@@ -81,7 +81,11 @@ EMAIL_USE_TLS = True
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {}
+DATABASES = {
+    'default': {
+
+    }
+}
 
 db_from_env = dj_database_url.config(default=os.environ['DATABASE_URL'], conn_max_age=500)
 DATABASES['default'].update(db_from_env)
