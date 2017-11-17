@@ -1,2 +1,2 @@
 web: gunicorn blog.wsgi --log-file -
-worker: python worker.pygi
+worker: python worker.py
