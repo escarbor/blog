@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://sheltered-wildwood-43207.herokuapp.com/*']
 #
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
@@ -142,10 +142,9 @@ if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
     # Example :"/var/www/example.com/media
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR,'../static'),
+        os.path.join(BASE_DIR, '../static'),
         os.path.join(BASE_DIR, "../media"),
     )
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-print(BASE_DIR)
