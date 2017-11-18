@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e91482b7-8abd-4936-94fd-55167e671587" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/settings/prod.py" afterPath="$PROJECT_DIR$/blog/settings/prod.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/about.html" afterPath="$PROJECT_DIR$/templates/about.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="342">
+              <caret line="19" column="151" lean-forward="false" selection-start-line="19" selection-start-column="151" selection-end-line="19" selection-end-column="151" />
               <folding />
             </state>
           </provider>
@@ -82,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prod.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -189,7 +189,6 @@
         <option value="$PROJECT_DIR$/static/css/blog.css" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/static/css/about.css" />
-        <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/static/css/contact.css" />
         <option value="$PROJECT_DIR$/gitignore" />
         <option value="$PROJECT_DIR$/requirements.txt" />
@@ -197,6 +196,7 @@
         <option value="$PROJECT_DIR$/blog/wsgi.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/blog/settings/prod.py" />
+        <option value="$PROJECT_DIR$/templates/about.html" />
       </list>
     </option>
   </component>
@@ -746,14 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -761,6 +753,14 @@
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="151" lean-forward="false" selection-start-line="19" selection-start-column="151" selection-end-line="19" selection-end-column="151" />
+          <folding />
         </state>
       </provider>
     </entry>
