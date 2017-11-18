@@ -15,7 +15,7 @@ urlpatterns = [
                   url(r'^blog/filtered/(?P<category>[\w-]+)/$', views.blog_filter, name='blog_filtered'),
                   url(r'^contact/contact_submit/$', views.contact_submit, name="contact_submit"),
                   url(r'^blog/([\w-]+)/comment_submit/$', views.comment_submit, name="comment_submit")
-              ] + static(settings.STATIC_URL, document6_root=settings.STATIC_ROOT)
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
