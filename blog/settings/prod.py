@@ -138,12 +138,12 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-# if DEBUG:
-#     # Absolute filesystem path to the directory that will hold user-uploaded files.
-#     # Example :"/var/www/example.com/media
-#     STATICFILES_DIRS = (
-#         os.path.join(BASE_DIR,'static'),
-#         os.path.join(BASE_DIR, "media"),
-#     )
-#     MEDIA_URL = '/media/'
-#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+if DEBUG:
+    # Absolute filesystem path to the directory that will hold user-uploaded files.
+    # Example :"/var/www/example.com/media
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR,'static'),
+        os.path.join(BASE_DIR, "media"),
+    )
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
