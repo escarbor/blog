@@ -132,11 +132,11 @@ STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
-STATIC_ROOT = os.path.join(BASE_DIR, '../staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, '/staticfiles')
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '../static'),
-)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
