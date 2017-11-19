@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 import os
 
-admin_url = os.getenv('BLOG_ADMIN_URL')
+admin_url = os.environ.get('BLOG_ADMIN_URL')
 
 urlpatterns = [
     url(r'^', include('app.urls')),
