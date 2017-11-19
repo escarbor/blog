@@ -15,14 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import os
 
-admin_url = os.environ.get('BLOG_ADMIN_URL')
 
 urlpatterns = [
     url(r'^', include('app.urls')),
-    url(admin_url, admin.site.urls),
+    url(r'^thygruesomedeath/', admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls'))
 ]
 
-print(admin_url)
