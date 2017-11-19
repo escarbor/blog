@@ -110,3 +110,12 @@ def comment_submit(request, slug):
             print("No Post?")
 
         return render(request, 'blog.html')
+
+
+def error_handler_404(request):
+    render(request, '404.html')
+
+
+def error_handler_500(request):
+    render(request, '500.html')
+

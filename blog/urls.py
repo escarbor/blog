@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+import os
+
+admin_url = os.getenv('BLOG_ADMIN_URL')
 
 urlpatterns = [
     url(r'^', include('app.urls')),
-    url(r'^thygruesomedeath/', admin.site.urls),
+    url(admin_url, admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls'))
 ]
