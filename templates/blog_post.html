@@ -25,7 +25,7 @@
 							<p>{{ post.formatted_markdown|safe }}</p>
 							<div>
 								{% for category in post.categories.all %}
-									<span class="label label-default blog-categories"><a
+									<span class="label label-default blog-categoriesblog-categories"><a
 											href="{% url 'blog_filtered' category=category %}">{{ category }}</a></span>
 								{% endfor %}
 							</div>
