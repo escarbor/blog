@@ -24,3 +24,5 @@ urlpatterns = [
     url(admin_url, admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls'))
 ]
+
+print(admin_url)
