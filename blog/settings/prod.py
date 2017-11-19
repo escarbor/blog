@@ -154,7 +154,7 @@ STATICFILES_DIRS = (
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
     # Example :"/var/www/example.com/media
