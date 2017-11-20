@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="52">
-              <caret line="126" column="81" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <caret line="129" column="26" lean-forward="false" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -733,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="126" column="81" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <caret line="129" column="26" lean-forward="false" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
