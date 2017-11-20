@@ -164,4 +164,4 @@ LOGGING = {
         },
     },
 }
-print(BASE_DIR)
+print(STATIC_ROOT)
