@@ -1,0 +1,117 @@
+
+
+.blog-body-font {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.blog-date {
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #616266;
+}
+
+.blog-blurb {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #7c8696 !important;
+}
+
+.blog-title-font {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #616266 !important;
+}
+
+.blog-title-font span:hover{
+
+    color: steelblue;
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+
+.blog-container {
+    width: 90%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.blog-categories{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.blog-categories > h3{
+    color: #616266;
+}
+
+.blog-category-links a{
+    color: steelblue;
+}
+
+.card {
+
+    border: solid 1px gray;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 387px;
+}
+
+.pc-view-card{
+    margin-bottom: 35px;
+}
+
+.blog-link a:link, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination-styles {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    margin: 20px auto 50px auto;
+    font-size: 20px;
+}
+
+.well {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div.blog-categories {
+    font-size: 20px;
+}
+
+
+@media screen
+and (max-width: 640px)
+and (min-width: 10px) {
+
+    .category-well {
+        display: none;
+    }
+
+}
+
+
+@media screen
+and (max-width: 1500px)
+and (min-width: 641px) {
+    .category-well {
+        display: none;
+    }
+
+}
+
+

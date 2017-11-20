@@ -1,0 +1,28 @@
+.contact-title-font  {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 25px;
+	padding-bottom: 10px;
+	color: #95a0b2 !important;
+}
+
+.contact-label {
+	padding-top: 10px;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 20px;
+	color: #95a0b2 !important;
+}
+
+#alert {
+    position: absolute;
+    display: none;
+}
+
+#alert-danger {
+    position: absolute;
+    display: none;
+}
+
+
+.form-container {
+	resize: vertical;
+}
