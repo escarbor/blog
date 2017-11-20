@@ -2,6 +2,7 @@ appdirs==1.4.3
 certifi==2017.7.27.1
 chardet==3.0.4
 dj-database-url==0.4.2
+dj-static==0.0.6
 Django==1.10.6
 django-contrib-comments==1.8.0
 django-crispy-forms==1.6.1
@@ -21,5 +22,5 @@ pyparsing==2.2.0
 python-akismet==0.3.0
 requests==2.18.4
 six==1.10.0
+static3==0.7.0
 urllib3==1.22
-whitenoise==3.3.1
