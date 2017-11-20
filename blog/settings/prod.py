@@ -127,7 +127,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # STATIC_URL = '/static/'
@@ -139,7 +139,7 @@ STATIC_URL = '/static/'
 #
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
@@ -164,3 +164,4 @@ LOGGING = {
         },
     },
 }
+print(BASE_DIR)
