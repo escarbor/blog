@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import os
 import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -50,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'blog.urls'
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.join(BASE_DIR, 'templates'))],
+        'DIRS': [os.path.join(os.path.join(BASE_DIR, '../templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,21 +125,19 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# STATIC_URL = '/static/'
-#
-# # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+MEDIA_URL = '/media/'
 
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-#
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'images')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = (os.path.join(
+    BASE_DIR, "static",),)
+
 
 if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
