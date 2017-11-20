@@ -158,4 +158,3 @@ LOGGING = {
         },
     },
 }
-print(BASE_DIR)
