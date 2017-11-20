@@ -139,7 +139,7 @@ if DEBUG:
     # Absolute filesystem path to the directory that will hold user-uploaded files.
     # Example :"/var/www/example.com/media
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
+        os.path.join(os.path.dirname(BASE_DIR, 'static')),
     )
 
 
