@@ -158,4 +158,4 @@ LOGGING = {
         },
     },
 }
-print(STATICFILES_DIRS)
+print(STATIC_ROOT)
