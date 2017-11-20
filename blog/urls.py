@@ -15,12 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import blog.settings.prod
 
 urlpatterns = [
     url(r'^', include('app.urls')),
     url(r'^thygruesomedeath/', admin.site.urls),
-    url(r'^markdownx/', include('markdownx.urls')),
-    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', ({'document_root': blog.settings.prod.STATIC_ROOT}))
+    url(r'^markdownx/', include('markdownx.urls'))
 ]
 
