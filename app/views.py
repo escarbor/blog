@@ -71,6 +71,7 @@ def contact_submit(request):
                     email_model = Email(email_subject=email_subject, email_name=email_name,
                                         email_address=email_address,
                                         email_body=email_body)
+                    print(email_model)
                     email_model.save(force_insert=True)
                     return JsonResponse({"status": 'true'})
                 except BadHeaderError:
@@ -109,13 +110,13 @@ def comment_submit(request, slug):
         else:
             print("No Post?")
 
-        return render(request, 'blog.html')
+        return render(request, 'blog.html', {"None": None})
 
 
 def error_handler_404(request):
-    render(request, '404.html')
+    render(request, '404.html', {"None": None})
 
 
 def error_handler_500(request):
-    render(request, '500.html')
+    render(request, '500.html', {"None": None})
 
