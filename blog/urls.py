@@ -24,7 +24,8 @@ ADMIN_URL_PATH = os.environ.get('ADMIN_URL_PATH')
 
 urlpatterns = [
     url(r'^', include('app.urls')),
-    url(r'^admin/'.format(ADMIN_URL_PATH), admin.site.urls),
+    #url(r'^admin/', admin.site.urls),
+    url(r'^{}/admin/'.format(ADMIN_URL_PATH), admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls'))
 ]
 
