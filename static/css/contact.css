@@ -26,3 +26,7 @@
 .form-container {
 	resize: vertical;
 }
+
+.alert-padding {
+	margin-bottom: 20px;
+}
