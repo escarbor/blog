@@ -58,7 +58,7 @@ def contact_submit(request):
                 email_body = request.POST['email_body']
                 email_name = request.POST['email_name']
                 email_subject = request.POST['email_subject']
-                to_email = settings.EMAIL_HOST_USER
+                to_email = settings.EMAIL_ADMIN_ADDRESS
                 email_subject_concat = "Email @ Personal Site From: " + email_name + " About: " + email_subject
                 try:
                     send_mail(
