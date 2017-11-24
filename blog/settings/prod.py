@@ -78,7 +78,7 @@ EMAIL_HOST = os.environ.get('EMAIL_HOST')
 EMAIL_ADMIN_ADDRESS = os.environ.get('ADMIN_EMAIL')
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
