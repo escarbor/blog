@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from blog.settings import prod
 import os
 
 
@@ -25,7 +24,7 @@ ADMIN_URL_PATH = os.environ.get('ADMIN_URL_PATH')
 
 urlpatterns = [
     url(r'^', include('app.urls')),
-    url(r'^admin/'.format(prod.ADMIN_URL_PATH), admin.site.urls),
+    url(r'^admin/'.format(ADMIN_URL_PATH), admin.site.urls),
     url(r'^markdownx/', include('markdownx.urls'))
 ]
 

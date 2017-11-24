@@ -52,7 +52,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ADMIN_URL_PATH = os.environ.get('ADMIN_URL_PATH')
 
 ROOT_URLCONF = 'blog.urls'
 
