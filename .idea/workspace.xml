@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e91482b7-8abd-4936-94fd-55167e671587" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views.py" afterPath="$PROJECT_DIR$/app/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="prod.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="-126">
+              <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -52,8 +53,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="112" column="58" lean-forward="false" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+            <state relative-caret-position="288">
+              <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -654,7 +655,7 @@
         <state relative-caret-position="288">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#638#679#0" expanded="true" />
+            <element signature="e#638#679#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,14 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -727,16 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/500.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -745,10 +728,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/settings/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="112" column="58" lean-forward="false" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
+        <state relative-caret-position="288">
+          <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
           <folding />
         </state>
       </provider>
