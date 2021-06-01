@@ -22,5 +22,5 @@ python-akismet==0.3.0
 requests==2.18.4
 six==1.10.0
 static3==0.7.0
-urllib3==1.22
+urllib3==1.26.5
 whitenoise==3.3.1
